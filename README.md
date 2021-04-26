@@ -1,10 +1,22 @@
 # livedata-kit
+Provides classes and extensions to solve common challenges with `LiveData`. 
 
+## Usage
+### MergerLiveData
+- subscribes to one or more `LiveData` of any type and merges their values
+- article: [Merge like you need it](www.medium.com) 
 
-## How to use
-All versions can be received from [jitpack.io](https://jitpack.io): 
+### DistinctLiveData
+- checks new values with `equals` and emits only different values to observers
+
+### MutableLiveData-ktx
+- provide `List` functions directly on a `MutableLiveData<List>`   
+
+## Getting Started
+_livedata-kit_ can be received via [jitpack.io](https://jitpack.io): 
 
 ```
+//project gradle
 allprojects {
     repositories {
         ...
@@ -13,12 +25,11 @@ allprojects {
     }
 }
 ```
-
-#### 0.1.0
 ```
+//build gradle
 dependencies {
-        implementation("com.github.DanielKnauf:livedata-kit:0.1.0") // kotlin
-        implementation 'com.github.DanielKnauf:livedata-kit:0.1.0' // java
+        implementation("com.github.DanielKnauf:livedata-kit:VERSION") // kotlin
+        implementation 'com.github.DanielKnauf:livedata-kit:VERSION' // java
 }
 ```
 
