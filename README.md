@@ -10,10 +10,10 @@ Provides classes and extensions to solve common challenges with `LiveData`.
 - checks new values with `equals` and emits only different values to observers
 
 ### MutableLiveData-ktx
-- provide `List` functions directly on a `MutableLiveData<List>`   
+- provides `List` functions directly on a `MutableLiveData<List>`   
 
 ## Getting Started
-_livedata-kit_ can be received via [jitpack.io](https://jitpack.io): 
+_livedata-kit_ can be received via [JitPack](https://jitpack.io): 
 
 ```
 //project gradle
