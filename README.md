@@ -4,7 +4,7 @@ Provides classes and extensions to solve common challenges with `LiveData`.
 ## Usage
 ### MergerLiveData
 - subscribes to one or more `LiveData` of any type and merges their values
-- article: [Merge like you need it](www.medium.com) 
+- article: [Merge like you need it](https://daniel-knauf.medium.com/merging-livedata-like-you-need-it-3abcf6b756ca) 
 
 ### DistinctLiveData
 - checks new values with `equals` and emits only different values to observers
