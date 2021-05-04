@@ -13,6 +13,9 @@ Provides classes and extensions to solve common challenges with `LiveData`.
 - provides `List` functions directly on a `MutableLiveData<List>`   
 
 ## Getting Started
+[![](https://jitpack.io/v/DanielKnauf/livedata-kit.svg)](https://jitpack.io/#DanielKnauf/livedata-kit)
+
+
 _livedata-kit_ can be received via [JitPack](https://jitpack.io): 
 
 ```
