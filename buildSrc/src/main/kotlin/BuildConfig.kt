@@ -7,8 +7,8 @@ object BuildConfig {
         const val target = 30
     }
 
-    const val versionCode = 1
-    const val versionName = "0.1.0"
+    const val versionCode = 2
+    const val versionName = "0.1.1"
 
     val javaVersion = JavaVersion.VERSION_1_8
 }
