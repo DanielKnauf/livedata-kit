@@ -125,10 +125,8 @@ fun <T> MutableLiveData<List<T>>.forEachIndexed(
     value?.forEachIndexed(action)
 }
 
-@MainThread
 fun <T> MutableLiveData<List<T>>.isEmpty(): Boolean = value?.isEmpty() ?: true
 
-@MainThread
 fun <T> MutableLiveData<List<T>>.lastIndex(): Int =
     if (isEmpty()) DEFAULT_LAST_INDEX else value?.lastIndex ?: DEFAULT_LAST_INDEX
 
