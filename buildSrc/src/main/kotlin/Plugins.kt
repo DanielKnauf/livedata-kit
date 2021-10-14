@@ -1,6 +1,6 @@
 object Plugins {
-    private const val vGradle = "4.1.2"
-    private const val vKotlin = "1.4.30"
+    private const val vGradle = "4.2.0"
+    private const val vKotlin = "1.5.20"
     private const val vAndroidMaven = "2.1"
 
     const val toolsGradle = "com.android.tools.build:gradle:$vGradle"
