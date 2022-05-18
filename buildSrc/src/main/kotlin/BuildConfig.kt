@@ -3,9 +3,9 @@ import org.gradle.api.JavaVersion
 object BuildConfig {
 
     object SdkVersion {
-        const val compile = 30
+        const val compile = 31
         const val min = 21
-        const val target = 30
+        const val target = 31
     }
 
     const val versionCode = 3
