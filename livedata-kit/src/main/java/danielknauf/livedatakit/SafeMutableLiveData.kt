@@ -29,23 +29,11 @@ package danielknauf.livedatakit
 import androidx.lifecycle.MutableLiveData
 
 /**
- *  A DistinctLiveData is a [MutableLiveData] which compares new values against
- *  its current value. If current value is [equals] to new value, the new value is
- *  dropped and none of its observers is notified.
+ *  A DistinctLiveData is a [MutableLiveData] which [getValue] is null safe.
  *
  *  @param initialValue
  */
-class DistinctLiveData<T>(initialValue: T) : MutableLiveData<T>(initialValue) {
+class SafeMutableLiveData<T>(private val initialValue: T) : MutableLiveData<T>(initialValue) {
 
-    override fun postValue(value: T) {
-        if (this.value == value) return
-
-        super.postValue(value)
-    }
-
-    override fun setValue(value: T) {
-        if (this.value == value) return
-
-        super.setValue(value)
-    }
+    override fun getValue(): T = super.getValue() ?: initialValue
 }
