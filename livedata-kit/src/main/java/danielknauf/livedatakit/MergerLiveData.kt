@@ -37,6 +37,7 @@ import danielknauf.livedatakit.internal.subscribeTo
  * [TargetType] and posted asynchronously.
  */
 sealed class MergerLiveData<TargetType> : MediatorLiveData<TargetType>() {
+
     /**
      * A [MergerLiveData] with one source.
      *

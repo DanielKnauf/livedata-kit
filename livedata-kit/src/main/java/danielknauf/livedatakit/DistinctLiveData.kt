@@ -36,6 +36,7 @@ import androidx.lifecycle.MutableLiveData
  *  @param initialValue
  */
 class DistinctLiveData<T>(initialValue: T) : MutableLiveData<T>(initialValue) {
+
     override fun postValue(value: T) {
         if (this.value == value) return
 
