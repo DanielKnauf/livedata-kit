@@ -24,7 +24,7 @@ allprojects {
     repositories {
         ...
         maven(url = "https://jitpack.io") // kotlin
-        maven { url 'https://jitpack.io' } // java
+        maven { url 'https://jitpack.io' } // groovy
     }
 }
 ```
@@ -32,7 +32,7 @@ allprojects {
 //build gradle
 dependencies {
         implementation("com.github.DanielKnauf:livedata-kit:VERSION") // kotlin
-        implementation 'com.github.DanielKnauf:livedata-kit:VERSION' // java
+        implementation 'com.github.DanielKnauf:livedata-kit:VERSION' // groovy
 }
 ```
 
